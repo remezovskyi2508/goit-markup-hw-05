@@ -454,13 +454,39 @@ main {
 .footer-subscribe {
 }
 
+.footer-form {
+  display: flex;
+  align-items: center;
+}
+
 .footer-input {
   border: 1px solid #fff;
   border-radius: 4px;
   background-color: transparent;
-  padding: 8px 212px 8px 16px;
+  padding: 8px 16px;
   margin-right: 24px;
+  min-width: 264px;
+  min-height: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
+.footer-input::placeholder {
+  color: #fff;
+}
+
+
+
 .footer-btn {
+  width: 165px;
+  height: 40px;
+  border-radius: 4px;
+  border: none;
+  background-color: #4d5ae5;
+  color: #fff;
+  padding: 2px 24px;
+  text-align: center;
+}
+
+.icon-send-btn {
+  fill: #fff;
 }
