@@ -505,10 +505,12 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 .order-modal {
+  display: flex;
+  flex-direction: column;
   border-radius: 4px;
   width: 408px;
   height: 584px;
@@ -517,6 +519,22 @@ main {
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background: #fcfcfc;
 }
+
+.modal-close-btn {
+  margin-left: auto;
+  margin-bottom: 24px;
+  border: none;
+  background: none;
+  width: 24px;
+  height: 24px;
+  align-self: center;
+}
+
+.modal-close-btn:hover {
+  fill: #404BBF;
+  stroke: #fff;
+}
+
 
 .modal-text {
   font-weight: 500;
@@ -537,11 +555,47 @@ main {
   margin-bottom: 16px;
 }
 
+.modal-label-text {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+}
+
 .modal-input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  padding: 11px 16px 11px 38px;
+}
+
+.modal-input-texarea {
+  padding: 11px 16px;
+}
+
+.modal-label-svg {
+  position: relative;
+}
+
+.modal-icone-persone {
+  position: absolute;
+  margin: 6px;
+  left: 15px;
+  top: 22px;
+}
+
+.modal-icone-phone {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  margin: 5px 2px 6px 3px;
+}
+
+.modal-icone-mail {
+  position: absolute;
+  left: 19px;
+  top: 22px;
+  margin: 6px 1.5px;
 }
 
 .modal-wrap {
@@ -549,7 +603,7 @@ main {
   margin-bottom: 24px;
 }
 
-.modal-checkbox{
+.modal-checkbox {
   margin-right: 8px;
 }
 
@@ -564,7 +618,7 @@ main {
 
 .modal-btn {
   display: block;
-  justify-content: center;
+  margin: 0 auto;
   width: 169px;
   height: 56px;
   padding: 16px 32px;
@@ -581,4 +635,5 @@ main {
 
 .order-modal textarea {
   height: 120px;
+  resize: none;
 }
