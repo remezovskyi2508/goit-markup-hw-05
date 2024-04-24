@@ -529,6 +529,7 @@ main {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background: #fcfcfc;
+  outline: none;
 }
 
 .modal-close-btn {
@@ -543,8 +544,8 @@ main {
   border-radius: 100%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #e7e9fc;
-  outline: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 .modal-close-btn:hover,
@@ -579,6 +580,7 @@ main {
   display: flex;
   flex-direction: column;
   margin-bottom: 8px;
+  position: relative;
 }
 
 .modal-label-last {
@@ -596,13 +598,10 @@ main {
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  padding: 11px 16px 11px 38px;
-}
-
-.modal-input:active,
-.modal-input:hover,
-.modal-input:focus, {
-  border-color: #404bbf;
+  padding-left: 38px;
+  font-size: 12px;
+  line-height: 1.17;
+  color: rgba(46, 47, 66, 0.4);
 }
 
 .modal-input:focus + .modal-icone-persone {
@@ -621,8 +620,10 @@ main {
   padding: 11px 16px;
 }
 
-.modal-label-svg {
-  position: relative;
+.modal-input::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  color: rgba(46, 47, 66, 0.4);
 }
 
 .modal-icone-persone {
@@ -679,9 +680,17 @@ main {
   border-radius: 4px;
   border: none;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 
 .order-modal textarea {
   height: 120px;
   resize: none;
+}
+
+.modal-form .modal-input:focus-visible,
+.modal-form .modal-input:hover,
+.modal-form .modal-input:focus {
+  border-color: #4d5ae5;
+  outline: none;
 }
