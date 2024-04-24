@@ -500,12 +500,23 @@ main {
 }
 
 .order-overlay {
-  background-color: #696dbb;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(46, 47, 66, 0.4);
+  width: 100%;
+  height: 100%;
+  z-index: 999;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100vh;
+  /*opacity: 0;
+  pointer-events: none;*/
+}
+
+.order-overlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .order-modal {
@@ -542,19 +553,17 @@ main {
   border: none;
 }
 
-.modal-close-btn .icon-close-btn {
-  fill: #2e2f42;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-close-btn:hover {
-  stroke: #fff;
-}
-
 .icon-close-btn {
   position: relative;
   top: 0px;
   left: 0px;
+  fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover .icon-close-btn,
+.modal-close-btn:focus .icon-close-btn {
+  fill: #fff;
 }
 
 .modal-text {
@@ -588,6 +597,24 @@ main {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding: 11px 16px 11px 38px;
+}
+
+.modal-input:active,
+.modal-input:hover,
+.modal-input:focus, {
+  border-color: #404bbf;
+}
+
+.modal-input:focus + .modal-icone-persone {
+  fill: #4d5ae5;
+}
+
+.modal-input:focus + .modal-icone-phone {
+  fill: #4d5ae5;
+}
+
+.modal-input:focus + .modal-icone-mail {
+  fill: #4d5ae5;
 }
 
 .modal-input-texarea {
