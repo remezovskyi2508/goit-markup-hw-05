@@ -460,9 +460,8 @@ main {
 
 .footer-input-wrapper{
   display: flex;
-}
-
-.footer-input-wrapper .footer-input {
+  gap: 24px;
+  align-items: center;
 }
 
 .footer-input {
@@ -482,7 +481,7 @@ main {
 
 .footer-btn {
   display: flex;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   border-radius: 4px;
   border: none;
@@ -490,8 +489,9 @@ main {
   color: #fff;
   padding: 8px 24px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .footer-btn:focus,
@@ -502,6 +502,7 @@ main {
 
 .icon-send-btn {
   fill: #fff;
+  margin-left: 16px;
 }
 
 .order-overlay {
