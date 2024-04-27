@@ -681,7 +681,7 @@ main {
   letter-spacing: 0.04em;
 }
 
-.visually-hidden.checked {
+.visually-hidden:checked + .modal-condition .modal-condition_text {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
@@ -706,6 +706,7 @@ main {
 }
 
 .modal-link-policy {
+  color: #4d5ae5; ;
 }
 
 .modal-btn {
