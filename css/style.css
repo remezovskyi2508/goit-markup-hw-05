@@ -600,7 +600,7 @@ main {
   margin-bottom: 8px;
 }
 
-.modal-form_textarea{
+.modal-form_textarea {
   margin-bottom: 16px;
 }
 
@@ -648,7 +648,8 @@ main {
 }
 
 .modal-input-texarea {
-  padding: 11px 16px;
+  padding: 8px 16px;
+  letter-spacing: 0.04em;
 }
 
 .modal-input::placeholder {
@@ -677,6 +678,26 @@ main {
   font-size: 12px;
   line-height: 1.17;
   color: #8e8f99;
+  letter-spacing: 0.04em;
+}
+
+.checked > span {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+
+.modal-condition_text {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
 }
 
 .modal-link-policy {
@@ -685,7 +706,7 @@ main {
 .modal-btn {
   display: block;
   margin: 0 auto;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   padding: 16px 32px;
   font-weight: 500;
@@ -696,6 +717,7 @@ main {
   background-color: #4d5ae5;
   border-radius: 4px;
   border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
